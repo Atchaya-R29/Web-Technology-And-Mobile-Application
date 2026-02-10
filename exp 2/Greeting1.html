@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Welcome</title>
+<style>
+body{
+margin:0;
+font-family:Arial;
+background:linear-gradient(135deg,#43cea2,#185a9d);
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+}
+.card{
+background:white;
+padding:50px;
+border-radius:15px;
+text-align:center;
+box-shadow:0 10px 25px rgba(0,0,0,0.2);
+}
+</style>
+</head>
+<body>
+
+<div class="card">
+<h1 id="welcomeText"></h1>
+</div>
+
+<script>
+let name=localStorage.getItem("firstname");
+document.getElementById("welcomeText").innerText=
+"Welcome "+" 🎉";
+</script>
+
+</body>
+</html>
